@@ -1,0 +1,8 @@
+! Sample switch baseline (for lab)
+hostname LAB-SW1
+no ip domain-lookup
+spanning-tree mode rapid-pvst
+interface Gi1/0/1
+ description Uplink
+ switchport trunk allowed vlan 10,20,30
+ spanning-tree portfast trunk
